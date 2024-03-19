@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="athith.css">
+
+    <title>AT-HIT</title>
+
+
+    <style>
+        .profile-image{
+            border-radius: 100%;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #000;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #f00;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 2px #e30909;
+            color: #fff;
+            text-align: center;
+        }
+
+        .close {
+            color: #f00;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: -15px;
+            margin-right: -15px;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        h2 {
+            color: #f00;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome!</h2>
+            <p>I'm glad you're here!</p>
+        </div>
+    </div>
+
+
+
+    <div class="logo"><em>AT-HIT</em></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Creations.html">Creations</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+
+</header>
+<body>
+<img class="profile-image" src="img/DP.jpeg" width="200" height="190">
+
+
+
+<p class="me"><em>Hi, it's me Athith!</em></p>
+<h1>Welcome to my personal website, a showcase of my passion </h1>
+<div class="newslatter">
+    <form>
+        <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+        <input type="submit" name="submit" value="Lets start" onclick="redirectToEmail()">
+    </form>
+
+
+
+    <p class="nothing"> I am a beginner in the world of web development, constantly learning and growing my skills.<br> Alongside, my love for capturing moments through the lens has driven me to constantly evolve my photography skills.<br> Explore my portfolio to see the fusion of my creative and technical abilities and don't hesitate to reach out for any collaboration opportunities.</p>
+</div>
+
+
+
+<button id="showBtn">Show Qualifications and Skills </button>
+
+<div id="qualificationsModal" class="modal">
+    <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <h2>Qualifications and Skills</h2>
+        <table>
+            <tr>
+                <th><em>Qualification</em></th>
+                <th><em>Institute</em></th>
+                <th><em>Year</em></th>
+            </tr>
+
+            <tr>
+                <td>Computer Programming and analysis</td>
+                <td>George Brown College</td>
+                <td>Expected 2024</td>
+            </tr>
+            <tr>
+                <td> Bio-Maths</td>
+                <td>NSS Higher Secondary School</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>High School</td>
+                    <td>Presidency Central School</td>
+                <td>2018</td>
+            </tr>
+
+        </table>
+        <h2>Skills</h2>
+        <ul>
+            <li><em>Web Development</em></li>
+            <li>JAVA</li>
+            <li><em>SQL/MySQL</em></li>
+            <li><em>Python</em></li>
+            <li><em>C#</em></li>
+            <li><em>PHP</em></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+</body>
+<script src="athith.js"></script>
+</html>

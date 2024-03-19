@@ -1,0 +1,214 @@
+
+body{
+    background-image: url("img/website.png");
+}
+
+.me{
+    color: white;
+    font-size: 40px;
+}
+h1{
+    color: white;
+    font-size: 30px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 60px;
+    box-shadow: 0px 0px 10px #333;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: auto;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+    transform: scale(1.1);
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+img{
+    margin: 50px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+.newsletter form{
+    width:380% ;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display: inline;
+    width: 10%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid;
+    outline: none;
+    border-radius: 30px;
+}
+.newslatter form input:last-child{
+    align-items: center;
+    position: center;
+    display: inline;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585 ;
+    top: 6px;
+    right: 6px;
+}
+p.nothing{
+  font-size: 22px;
+    font-family: "HoloLens MDL2 Assets";
+    overflow: hidden;
+    background-color:transparent;
+    color: white;
+    border-radius: 30px;
+
+  margin: 2px;
+    padding: 30px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+}
+
+.closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+th {
+    background-color: #000000;
+}
+
+
+
+
+
+button#showBtn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #ea2020;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgb(199, 17, 17), 0 6px 20px 0 rgb(227, 9, 9);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+button#showBtn:hover {
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(255,0,0,0.19);
+    transform: translateY(-2px);
+}
+
+
+
